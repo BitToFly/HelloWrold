@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>菜单导航栏</title>
+	</head>
+	<body>
+		<style>
+			* {
+				margin: 0;
+				padding: 0;
+				list-style: none;
+				text-decoration: none;
+			}
+
+			#nav {
+				width: 500px;
+				height: 40px;
+				background:lightgreen;
+				margin: 0 auto;
+			}
+
+			ul {
+				background: #aaa;
+			}
+
+			ul li {
+				float: left;
+				display: block;
+				height: 40px;
+				line-height: 40px;
+				padding: 0 20px;
+				position: relative;
+			}
+
+			ul li:hover {
+				background:greenyellow;
+			}
+
+			ul li ul li {
+				float: none;
+			}
+
+			ul li ul {
+				position: absolute;
+				top: 40px;
+				left: 0;
+				display: none;			/*将二级菜单设置为display：none;*/
+			}
+
+			ul li ul li:hover {
+				background: palegreen;
+			}
+
+
+			ul li:hover ul {
+				display: block;			/*在划过二级菜单从属的一级菜单时，设置为display:block;*/
+			}
+		</style>
+
+		<div id="nav">
+			<ul>
+				<li><a href="">主页</a>
+				    <ul>
+						<li><a href="#">资讯</a> </li>
+						<li><a href="#">直播</a> </li>
+						<li><a href="#">趣味</a> </li>
+					</ul>				
+				</li>
+				<li><a href="">新闻</a>
+					<ul>
+						<li><a href="#">娱乐</a> </li>
+						<li><a href="#">军事</a> </li>
+						<li><a href="#">财经</a> </li>
+						<li><a href="#">体育</a> </li>
+					</ul>
+				</li>
+				<li><a href="">联系</a>
+					<ul>
+						<li><a hrTf="#">Email</a> </li>
+						<li><a Thref="#">Tel</a> </li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</body>
+</html>
